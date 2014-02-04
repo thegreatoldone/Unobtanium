@@ -1260,6 +1260,7 @@ int64 static GetBlockValue(int nHeight, int64 nFees)
     // the inflationary subsidy
     else if (nSubsidy < nMinSubsidy)
     {
+    	//unlimited coins are possible here. i will come back to fix
         nSubsidy = nMinSubsidy;
     }
 
